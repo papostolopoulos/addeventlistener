@@ -16,30 +16,289 @@
       <tags>
         <tag name="Home" :selected="true">
           <h1>Here is the tag about the homepage</h1>
+
+          <section>
+            <article v-for="position in indexPage">
+              <job-title>
+                {{position.job_title}}
+              </job-title>
+
+              <company>
+                <a v-bind:href="position.company_url" target="_blank">
+                  {{position.company}}
+                </a>
+              </company>
+
+              <location>
+                {{position.location}}
+              </location>
+
+              <dates>
+                {{position.start_date}} - {{position.end_date}}
+              </dates>
+
+              <ul>
+                <description v-for="description in position.description" v-bind:key="description.id">
+                  {{description.bullet}}
+                </description>
+              </ul>
+
+              <image-container>
+                <img v-bind:src="position.image_url" v-bind:alt="position.company">
+              </image-container>
+
+              <video-container>
+                <video v-bind:src="position.video_url" autoplay loop muted width="320">
+
+                </video>
+              </video-container>
+            </article>
+          </section>
+
         </tag>
+
+
+
+
+
 
         <tag name="About">
           <h1>Here is the tag about me</h1>
+
+          <section>
+            <article v-for="position in aboutMe">
+              <job-title>
+                {{position.job_title}}
+              </job-title>
+
+              <company>
+                <a v-bind:href="position.company_url" target="_blank">
+                  {{position.company}}
+                </a>
+              </company>
+
+              <location>
+                {{position.location}}
+              </location>
+
+              <dates>
+                {{position.start_date}} - {{position.end_date}}
+              </dates>
+
+              <ul>
+                <description v-for="description in position.description" v-bind:key="description.id">
+                  {{description.bullet}}
+                </description>
+              </ul>
+
+              <image-container>
+                <img v-bind:src="position.image_url" v-bind:alt="position.company">
+              </image-container>
+
+              <video-container>
+                <video v-bind:src="position.video_url" autoplay loop muted width="320">
+
+                </video>
+              </video-container>
+            </article>
+          </section>
         </tag>
 
+
+
+
+
+
         <tag name="Development Projects">
-          <h1>Here is the tag about projects</h1>
+          <h1>Here is the tag about the projects</h1>
+          <article v-for="position in developmentProjects">
+            <job-title>
+              {{position.job_title}}
+            </job-title>
+
+            <company>
+              <a v-bind:href="position.company_url" target="_blank">
+                {{position.company}}
+              </a>
+            </company>
+
+            <location>
+              {{position.location}}
+            </location>
+
+            <dates>
+              {{position.start_date}} - {{position.end_date}}
+            </dates>
+
+            <ul>
+              <description v-for="description in position.description" v-bind:key="description.id">
+                {{description.bullet}}
+              </description>
+            </ul>
+
+
+            <image-container>
+              <img v-bind:src="position.image_url" v-bind:alt="position.company">
+            </image-container>
+
+          </article>
         </tag>
+
+
+
+
 
         <tag name="Work Experience">
           <h1>Here is the tag about experience</h1>
+          <article v-for="position in professionalExperience">
+            <job-title>
+              {{position.job_title}}
+            </job-title>
+
+            <company>
+              <a v-bind:href="position.company_url" target="_blank">
+                {{position.company}}
+              </a>
+            </company>
+
+            <location>
+              {{position.location}}
+            </location>
+
+            <dates>
+              {{position.start_date}} - {{position.end_date}}
+            </dates>
+
+            <ul>
+              <description v-for="description in position.description" v-bind:key="description.id">
+                {{description.bullet}}
+              </description>
+            </ul>
+
+
+            <image-container>
+              <img v-bind:src="position.image_url" v-bind:alt="position.company">
+            </image-container>
+
+          </article>
+
         </tag>
+
+
+
+
 
         <tag name="Academic Experience">
           <h1>Here is the tag about academia</h1>
+          <article v-for="position in academicExperience">
+            <job-title>
+              {{position.job_title}}
+            </job-title>
+
+            <company>
+              <a v-bind:href="position.company_url" target="_blank">
+                {{position.company}}
+              </a>
+            </company>
+
+            <location>
+              {{position.location}}
+            </location>
+
+            <dates>
+              {{position.start_date}} - {{position.end_date}}
+            </dates>
+
+            <ul>
+              <description v-for="description in position.description" v-bind:key="description.id">
+                {{description.bullet}}
+              </description>
+            </ul>
+
+
+            <image-container>
+              <img v-bind:src="position.image_url" v-bind:alt="position.company">
+            </image-container>
+
+          </article>
         </tag>
+
+
+
+
 
         <tag name="Skills">
           <h1>Here is the tag about skills</h1>
+          <article v-for="position in skillSet">
+            <job-title>
+              {{position.job_title}}
+            </job-title>
+
+            <company>
+              <a v-bind:href="position.company_url" target="_blank">
+                {{position.company}}
+              </a>
+            </company>
+
+            <location>
+              {{position.location}}
+            </location>
+
+            <dates>
+              {{position.start_date}} - {{position.end_date}}
+            </dates>
+
+            <ul>
+              <description v-for="description in position.description" v-bind:key="description.id">
+                {{description.bullet}}
+              </description>
+            </ul>
+
+
+            <image-container>
+              <img v-bind:src="position.image_url" v-bind:alt="position.company">
+            </image-container>
+
+          </article>
         </tag>
+
+
+
+
 
         <tag name="Hobbies">
           <h1>Here is the tag about hobbies</h1>
+          <article v-for="position in hobbies">
+            <job-title>
+              {{position.job_title}}
+            </job-title>
+
+            <company>
+              <a v-bind:href="position.company_url" target="_blank">
+                {{position.company}}
+              </a>
+            </company>
+
+            <location>
+              {{position.location}}
+            </location>
+
+            <dates>
+              {{position.start_date}} - {{position.end_date}}
+            </dates>
+
+            <ul>
+              <description v-for="description in position.description" v-bind:key="description.id">
+                {{description.bullet}}
+              </description>
+            </ul>
+
+
+            <image-container>
+              <img v-bind:src="position.image_url" v-bind:alt="position.company">
+            </image-container>
+
+          </article>
         </tag>
 
         <tag name="Contact">
