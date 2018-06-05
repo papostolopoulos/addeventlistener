@@ -282,15 +282,9 @@ var positions = new Vue({
       start_date: "03/2013",
       end_date: "02/2016",
       description: [
-<<<<<<< HEAD
-        {bullet: "Lead the Algo Search Escalations team with members in seven countries. Query analysis meetings with Yahoo (mobile), Microsoft (desktop) PMs & engineering teams."},
-        {bullet: "Managed the Search results enhancement requests between the Yahoo Search and Microsoft’s Bing."},
-        {bullet: "Lead shopping products QA team through query evaluations, use cases, debugging, escalations."},
-=======
         {bullet: "Led the Algo Search Escalations team with members in seven countries. Query analysis meetings with Yahoo (mobile), Microsoft (desktop) PMs & engineering teams."},
         {bullet: "Managed the Search results enhancement requests between the Yahoo Search and Microsoft’s Bing."},
         {bullet: "Led shopping products QA team through query evaluations, use cases, debugging, escalations."},
->>>>>>> f36a8e3a577bcaed51a05981ba6e621ad7e32506
         {bullet: "Managed internal Query Triage tool for bug distribution, escalations, shift management."},
         {bullet: "Review of verticals new experiences through A/B testing."}
       ],
