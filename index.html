@@ -15,7 +15,6 @@
     <div id="navigation-tags">
       <tags>
         <tag name="Home" :selected="true">
-          <h1>Here is the tag about the homepage</h1>
 
           <section>
             <article v-for="position in indexPage">
@@ -34,7 +33,7 @@
               </location>
 
               <dates>
-                {{position.start_date}} - {{position.end_date}}
+                {{position.start_date}} to {{position.end_date}}
               </dates>
 
               <ul>
@@ -63,7 +62,6 @@
 
 
         <tag name="About">
-          <h1>Here is the tag about me</h1>
 
           <section>
             <article v-for="position in aboutMe">
