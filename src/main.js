@@ -5,7 +5,7 @@ import Vue from 'vue'
 //   el: '#app',
 //   render: h => h(App)
 // })
-
+console.log("Hello")
 Vue.component('tags', {
   template: `
     <div>
@@ -134,16 +134,19 @@ var positions = new Vue({
   data: {
     positions: [
       {id: 0,
-      company: "Welcome to my pad",
+      company: "Hello, I am Paris",
       company_url: "http://addeventlistener.xyz",
-      location: "This is where the location goes at",
-      job_title: "This page does not need a job title",
-      start_date: "No start date",
-      end_date: "no End Date",
+      location: "And no, I am not French.",
+      job_title: "Mostly unemployed but it helps me stay fit...",
+      start_date: "People tend",
+      end_date: "not take me seriously for being a:",
       description: [
-        {bullet: "This is bullet 1."},
-        {bullet: "This is bullet 2"},
-        {bullet: "This is bullet 3"}
+        {bullet: "Team Leader"},
+        {bullet: "Follower"},
+        {bullet: "Web Developer"},
+        {bullet: "Project Manager"},
+        {bullet: "Teacher"},
+        {bullet: "Athletic Trainer"}
       ],
       type_of_position: "homepage",
       image_url: "",
@@ -279,11 +282,11 @@ var positions = new Vue({
       start_date: "03/2013",
       end_date: "02/2016",
       description: [
-        {bullet: "Lead the Algo Search Query Triage escalations team with members in seven countries."},
-        {bullet: "In charge of escalations for relevance, triggering, ranking with Yahoo and Bing PMs and engineering teams."},
+        {bullet: "Lead the Algo Search Escalations team with members in seven countries. Query analysis meetings with Yahoo (mobile), Microsoft (desktop) PMs & engineering teams."},
         {bullet: "Managed the Search results enhancement requests between the Yahoo Search and Microsoft’s Bing."},
-        {bullet: "In charge of the Query debugging and escalations shifts and internal tool for all the Yahoo Search verticals."},
-        {bullet: "Lead the shopping search verticals QA team through query evaluations, use cases, debugging, escalations."}
+        {bullet: "Lead shopping products QA team through query evaluations, use cases, debugging, escalations."},
+        {bullet: "Managed internal Query Triage tool for bug distribution, escalations, shift management."},
+        {bullet: "Review of verticals new experiences through A/B testing."}
       ],
       type_of_position: "job",
       image_url: "",
@@ -298,16 +301,10 @@ var positions = new Vue({
       start_date: "02/2012",
       end_date: "03/2013",
       description: [
-        {bullet: "Oversaw the mapping production progress for ~15 countries and a team of ~30 Data Specialists."},
-        {bullet: "Coordinated the work of six POCs and appoints weekly and monthly priorities based on the production needs and each quarter's publishing goals."},
-        {bullet: "Created and managed project efficiency guidelines and policies for the effective production of Data evaluations."},
-        {bullet: "Maintained statistics and work progresses based on projects' status and map creation progress."},
-        {bullet: "Created and is in charge of team's internal website that is used for the communication of project goals, ongoing education and structural team changes"},
-        {bullet: "Supported, guided and mentored Data Specialists who are currently working in active datasets."},
-        {bullet: "Assisted Data Specialists with policy guidelines, issue resolution and internal communication channels."},
-        {bullet: "Fostered the implementation of Action Items that aim in the completion of stage work within the set time frames."},
-        {bullet: "Communicated with outsourced offices in the US and overseas for the effective transition of information, knowledge and policy guidelines."},
-        {bullet: "Communicated the priorities of the mapping production process between Program Managers, engineers and the Data Specialists."}
+        {bullet: "Lead ~30 Specialists with project delivery, policy, issues resolution and communication with remote client teams."},
+        {bullet: "Oversaw the mapping production quality evaluation for ~25 countries within four launch cycles."},
+        {bullet: "Created and coordinated the team's internal website. used for the project goals, education and team changes."},
+        {bullet: "Built a prioritization model aimed at the communication of tasks between PMs, engineers, and Data Specialists."}
       ],
       type_of_position: "job",
       image_url: "",
@@ -322,10 +319,8 @@ var positions = new Vue({
     start_date: "02/2011",
     end_date: "02/2012",
     description: [
-      {bullet: "Initiated and led a team for the registration and road quality labeling of the full road network of Greece, constituted of 2,000+ national and provincial routes."},
-      {bullet: "Audit reports for street geometry, structure, outlay quality and driving directions priority."},
-      {bullet: "Route consistency, street names and driving directions quality confirmation."},
-      {bullet: "Geopolitical codes and Points of Interest data comparison, location placement and verification."}
+      {bullet: "Managed the Mapping Team for the Greek National Road Network. Liaison with India and Washington offices to identify 2,000+ national and provincial routes."},
+      {bullet: "Audited street geometry, driving directions priority, route consistency, street names, POIs, location placement."}
     ],
     type_of_position: "job",
     image_url: "",
@@ -340,11 +335,8 @@ var positions = new Vue({
     start_date: "11/2009",
     end_date: "02/2011",
     description: [
-      {bullet: "Content editing for Yahoo trending News, Finance, Sports, Movies, TV and search results pages."},
-      {bullet: "Query interpretation, analysis and definition. User Intent analysis, timelessness, ambiguity, spelling."},
-      {bullet: "Comparison of news, image, social media search results, content relevancy, freshness, grouping order."},
-      {bullet: "Evaluation of Yahoo! interactive tools in shopping, entertainment and online research."},
-      {bullet: "Spotchecking of the work of search editors in outsourced international companies. (https://gr.yahoo.com)"}
+      {bullet: "Front page content editing in various verticals."},
+      {bullet: "Query interpretation, classification, user Intent analysis."}
     ],
     type_of_position: "job",
     image_url: "",
@@ -361,10 +353,7 @@ var positions = new Vue({
     description: [
       {bullet: "Inventory optimization, rates strategy implementation. Management of 30 online extranets."},
       {bullet: "Price, promotion and package modification strategies based on forecast reports, competitive set analysis"},
-      {bullet: "Relationship management with the hotel’s online travel and Global Distribution Systems partners."},
-      {bullet: "Pricing strategies"},
-      {bullet: "Forecasting reports and analysis"},
-      {bullet: "Promotional packages creation. Online distribution and GDS exposure."}
+      {bullet: "Relationship management with the hotel’s online travel and Global Distribution Systems partners."}
     ],
     type_of_position: "job",
     image_url: "",
@@ -396,10 +385,7 @@ var positions = new Vue({
     description: [
       {bullet: "Provided online and phone services to international clientele interested in company’s traveling services."},
       {bullet: "Was responsible for the interaction of the network’s 60 hotel affiliates with the company for arranging the rates of commission, payment procedures and verifying traveling dates of online clientele."},
-      {bullet: "Contributed to the increase of monthly online sales by 120%."},
-      {bullet: "Accounts Payable - Receivable"},
-      {bullet: "Captured online payments of clientele and was in charge of the online banking payments of 60 affiliates."},
-      {bullet: "Recorded all clientele that purchased services online. Recorded company’s monthly performance."},
+      {bullet: "Accounts Payable - Receivable"}
     ],
     type_of_position: "job",
     image_url: "",
@@ -669,19 +655,20 @@ var positions = new Vue({
     },
 
     {id: 31,
-    company: "This is where the company goes at",
-    company_url: "",
-    location: "This is where the location goes at",
-    job_title: "This page does not need a job title",
-    start_date: "No start date",
-    end_date: "no End Date",
+    company: "Did you know that my official name is Paraskevas?",
+    company_url: "https://www.greek-names.info/paraskevas/",
+    location: "Fact: My full name does not fit in credit cards.",
+    job_title: "About me? I am super awesome. That is all.",
+    start_date: "Other things that make me really cool:",
+    end_date: "",
     description: [
-      {bullet: "This is bullet 1 where I say something about me"},
-      {bullet: "This is bullet 2 where I say something about me"},
-      {bullet: "This is bullet 3 where I say something about me"}
+      {bullet: "I can write code. But I don't always understand it."},
+      {bullet: "I can manage teams of people. But I somehow fail to manage my kids."},
+      {bullet: "I am very organized. I put my socks and underwear in different drawers."},
+      {bullet: "I like to learn new things. My next learning goal is how to bake cookies blidfolded."}
     ],
     type_of_position: "about me",
-    image_url: "",
+    image_url: "./src/assets/images/aboutme.jpg",
     video_url: ""
     },
 
