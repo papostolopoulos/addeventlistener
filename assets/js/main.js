@@ -1,4 +1,6 @@
 console.log("Hello")
+
+// TAGS - STRUCTURE OF HEADER
 Vue.component('tags', {
   template: `
     <div>
@@ -40,6 +42,11 @@ Vue.component('tags', {
     }
 });
 
+
+
+
+
+// TAG - SHOW TAG BASED ON IF SELECTED OR NOT
 Vue.component('tag', {
   template: `
     <div v-show="isActive"><slot></slot></div>
@@ -85,9 +92,7 @@ Vue.component('dates', {
 });
 
 Vue.component('description', {
-  template: `
-      <li><slot></slot></li>
-  `
+  template: '<li><slot></slot></li>'
 });
 
 Vue.component('image-container', {
@@ -588,7 +593,7 @@ var positions = new Vue({
     company_url: "http://www.galvanize.com/",
     location: "San Francisco, CA",
     job_title: "Full Stack Development Program",
-    start_date: "19/2016",
+    start_date: "09/2016",
     end_date: "02/2017",
     description: [
       {bullet: "Full Stack Immersive Program"},
@@ -729,7 +734,7 @@ var positions = new Vue({
       {bullet: "Cycling"},
       {bullet: "Swimming"},
       {bullet: "Weight lifting"},
-      {bullet: "Boxing"},
+      {bullet: "Boxing"}
     ],
     type_of_position: "hobbies",
     image_url: "",
